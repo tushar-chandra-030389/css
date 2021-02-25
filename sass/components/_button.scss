@@ -21,6 +21,8 @@
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
         &::after {
+            // Only trasition of changes done for hover
+            transition: all .4s;
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
@@ -62,7 +64,8 @@
 
         z-index: -1;
 
-        transition: all .4s;
+        // transition is done for both hover in and hover out
+        // transition: all .4s;
     }
 
     &--animated {

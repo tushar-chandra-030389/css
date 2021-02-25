@@ -132,6 +132,7 @@ body {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
+    transition: all .4s;
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
@@ -160,8 +161,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  transition: all .4s; }
+  z-index: -1; }
 
 .btn--animated {
   animation: moveFromBottom .2s ease-out .75s;
