@@ -1,3 +1,18 @@
+/*
+    0 -600 mobile
+    600 - 900 tablet portrait
+    900 - 1200 tablet landscape
+    1200 - 1800 normal styles
+    1800 - Big desktop
+
+    $breakpoint
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+
+    1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,7 +23,23 @@
 
 html {
   font-size: 62.5%;
-  /* 16px; 10 / 16 * 100 */ }
+  /* 10px; 10 / 16 * 100 */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.2%;
+      /* 9px; 9 / 16 * 100 */ } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%;
+      /* 8px; 8 / 16 * 100 */ } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%;
+      /* 8px; 8 / 16 * 100 */ } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%;
+      /* 12px; 12/16 * 100 */ } }
 
 body {
   box-sizing: border-box; }
